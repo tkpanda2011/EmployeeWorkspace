@@ -1,0 +1,41 @@
+
+  <div class="form"  ng-controller="empController">
+        <div id="employeeDiv">   
+          <h1>Employee Details</h1>
+          
+          <form>
+          
+          <div>
+            <div>
+              <label>
+                First Name<span class="active highlight">*</span>
+              </label>
+              <input type="text" required autocomplete="off" ng-model="empFNanme"  />
+            </div>
+        
+            <div>
+              <label>
+                Last Name<span class="active highlight">*</span>
+              </label>
+              <input type="text"required autocomplete="off" ng-model="empLName" />
+            </div>
+          </div>
+
+          <div>
+            <label>
+              Email Address<span class="active highlight">*</span>
+            </label>
+            <input type="email" required autocomplete="off" ng-model="empEmail" value ={{empData.firstName}}} />
+          </div>
+          
+         
+          
+          
+          </form>
+
+        </div>
+
+        
+        
+</div> <!-- /form -->
+

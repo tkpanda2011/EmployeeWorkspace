@@ -1,0 +1,38 @@
+
+
+  <div class="form" ng-controller="loginController" ng-init="init()">
+      
+     <div class="panel panel-primary">
+         <div class="panel-heading">
+          <h1 class="panel-title">Welcome Back  !</h1>
+         </div>
+         <div class="panel-body">
+          <form class="form-horizontal">
+          
+            <div class="form-group form-group-sm">
+            <label for="signInEmail">
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="text" required autocomplete="off" ng-model="signInEmail" class="form-control input-sm"/>
+          </div>
+          
+           <div class="form-group form-group-sm">
+            <label for="signInPassword">
+              Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" ng-model="signInPassword" class="form-control input-sm"/>
+          </div>
+          
+              <div>
+              <p class="forgot"><a href="signup">Join Now</a> <b class="forgot">|</b> <a href="#">Forgot Password?</a></p>
+            </div>
+              <div class="btn-group">
+          <button  ng-click="submitForm('signIn')" class="btn btn-danger">Log In</button>
+          </div>
+          </form>
+             </div>
+        </div>
+      
+</div> 
+  
+
